@@ -7,9 +7,9 @@ def count(a, b):
     
     sq_count = a // b
     
-    remaining = count(b, a % b)
+    ost = count(b, a % b)
     
-    return sq_count + remaining
+    return sq_count + ost
     
 def main():
     a = int(input())
@@ -18,3 +18,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
