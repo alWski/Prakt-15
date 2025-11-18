@@ -1,7 +1,4 @@
 def maxlist(a):
-    if len(a) == 0:
-        return None
-    
     if len(a) == 1:
         return a[0]
     
@@ -22,3 +19,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
