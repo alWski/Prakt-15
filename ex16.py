@@ -2,8 +2,8 @@ def ten_to_ran(x, n):
     if n // x == 0:
         return str(n%x)
     if n % x > 9:
-    	s = 'nnnnnnnnnnABCDEF'
-    	return ten_to_ran(x, n // x) + str(s[n % x])
+    	s = 'ABCDEF'
+    	return ten_to_ran(x, n // x) + str(s[(n % x) % 10])
     return ten_to_ran(x, n // x) + str(n % x)
     
 def main():
