@@ -1,12 +1,15 @@
-def count(n):
-    if n < 10:
+def pownum(a, n):
+    if n == 0:
         return 1
+    elif n == 1:
+        return a
     else:
-        return 1 + count(n // 10)
+        return a * pownum(a, n - 1)
 
 def main():
-    n = int(input())
-    print(count(n))
+	a = int(input())
+	n = int(input())
+	print(pownum(a, n))
 
 if __name__ == "__main__":
     main()
